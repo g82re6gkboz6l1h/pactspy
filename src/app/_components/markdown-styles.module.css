@@ -1,0 +1,99 @@
+.markdown {
+  @apply text-lg leading-relaxed text-gray-700 dark:text-gray-300;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-4xl mt-16 mb-6 leading-snug font-bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.markdown h3 {
+  @apply text-3xl mt-12 mb-4 leading-snug font-bold;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.markdown h4 {
+  @apply text-2xl mt-8 mb-4 leading-snug font-semibold text-purple-600 dark:text-purple-400;
+}
+
+.markdown a {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 font-medium underline decoration-purple-400 hover:decoration-purple-600 underline-offset-4 transition-all;
+}
+
+.markdown strong {
+  @apply font-bold text-gray-900 dark:text-white;
+}
+
+.markdown em {
+  @apply italic text-purple-600 dark:text-purple-400;
+}
+
+.markdown ul {
+  @apply list-none space-y-2;
+}
+
+.markdown ul li {
+  @apply pl-6 relative;
+}
+
+.markdown ul li::before {
+  content: "→";
+  @apply absolute left-0 text-purple-600 dark:text-purple-400 font-bold;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside space-y-2;
+}
+
+.markdown ol li {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-purple-600 dark:border-purple-400 pl-6 py-2 my-8 italic text-gray-600 dark:text-gray-400 bg-purple-50 dark:bg-purple-900/20 rounded-r-lg;
+}
+
+.markdown code {
+  @apply px-2 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 rounded text-sm font-mono;
+}
+
+.markdown pre {
+  @apply my-8 p-6 bg-gray-900 dark:bg-black rounded-xl overflow-x-auto shadow-lg;
+}
+
+.markdown pre code {
+  @apply bg-transparent text-gray-100 p-0;
+}
+
+.markdown img {
+  @apply my-8 rounded-2xl shadow-card w-full;
+}
+
+.markdown hr {
+  @apply my-12 border-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent;
+}
+
+.markdown table {
+  @apply w-full my-8 border-collapse;
+}
+
+.markdown th {
+  @apply bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold p-3 text-left;
+}
+
+.markdown td {
+  @apply border border-gray-300 dark:border-gray-700 p-3;
+}
